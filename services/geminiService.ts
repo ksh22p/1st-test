@@ -4,7 +4,8 @@ import { AnalysisResult, ChatMessage } from '../types';
 
 // Initialize Gemini Client
 // CRITICAL: process.env.API_KEY is handled by the environment.
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+const ai = new GoogleGenAI({ apiKey: apiKey });
 
 const fileToPart = (file: File): Promise<{ inlineData: { data: string; mimeType: string } }> => {
   return new Promise((resolve, reject) => {
