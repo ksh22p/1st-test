@@ -1,0 +1,5 @@
+{
+  "name": "KDI Report Analyzer",
+  "description": "An intelligent tool to analyze and summarize KDI Preliminary Feasibility Study Reports according to specific review guidelines, featuring automated data extraction and visualization.",
+  "requestFramePermissions": []
+}
